@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultats</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleResultats.css') }}">
+</head>
+<body>
+    <div id="papa_resultats">
+        <h1>Résulats</h1>
+        <div id="nom_indice">
+            <h2>NOM:</h2>
+            <h2>{{ recup['nom'] }}</h2>
+        </div>
+        <div id="prix_indice">
+            <h2>PRIX:</h2>
+            <h2>{{ recup['prix'] }}</h2>
+        </div>
+        <div id="chart">
+            <a href="{{ recup['chart'] }}"><h2>Évolution Graphique de l'action</h2></a>
+        </div>
+    </div>
+</body>
+</html>
