@@ -1,12 +1,12 @@
 body{
     width: 100%;
-    height: 900px;
+    height: 600px;
     background: linear-gradient(to right, rgb(148, 148, 242), rgb(236, 90, 236));
 }
 
 #papa_resultats{
     width: 100%;
-    height: 100%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -5,6 +5,7 @@ sys.path.append('..')
 
 from base.config import es
 ### RECUPÉRATION DES DONNÉES ################
+# es.indices.delete(index='indice_boursier')
 
 #### BEAUTIFULSOUP ####################
 import requests
@@ -40,10 +41,10 @@ for i, j, k in zip(noms_indices,prix_actions,charts):
     dicto.append({"nom":i,"prix":j,"chart":k})
 
 ############ CRÉATION DE L'INDEX 'indice_boursiers' ##############
-# es.indices.create(index='indice_boursier',ignore=400)
+es.indices.create(index='indice_boursier',ignore=400)
 
 ########### INSERTION DES DONNÉES DANS ÉLASTICSEARCH #############
-# for ind in range(len(dicto)):
-#     print(dicto[ind])
-#     es.index(index='indice_boursier', document=dicto[ind], id=ind)
+for ind in range(len(dicto)):
+    print(dicto[ind])
+    es.index(index='indice_boursier', document=dicto[ind], id=ind)
 

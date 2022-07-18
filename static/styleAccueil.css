@@ -1,5 +1,5 @@
 body{
-    height:790px;
+    height:650px;
     width: 100%;
     background:  url("img_indice.jpg") no-repeat ;
     /* background-position: center; */
@@ -32,6 +32,6 @@ button{
 }
 h1{
     background: rgb(189, 250, 154);
-    font-size: 38px;
+    font-size: 25px;
     border-radius: 5px;
 }

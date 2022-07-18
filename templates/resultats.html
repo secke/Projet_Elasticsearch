@@ -9,17 +9,19 @@
 </head>
 <body>
     <div id="papa_resultats">
-        <h1>Résulats</h1>
+        <h1 style="text-decoration: underline;">VOTRE RÉSULTAT</h1>
         <div id="nom_indice">
-            <h2>NOM:</h2>
-            <h2>{{ recup['nom'] }}</h2>
+            <h2>LE NOM DE L'INDICE EST:</h2>
+            <h2><span style="color: blue ;font-size: 45px;">{{ recup['nom'] }}</span></h2>
         </div>
         <div id="prix_indice">
-            <h2>PRIX:</h2>
-            <h2>{{ recup['prix'] }}</h2>
+            <h2>LE PRIX DE L'ACTION DE L'INDICE {{ recup['nom'] }} EST DE:</h2>
+            <h2><span style="color: blue ;font-size: 45px;">{{ recup['prix'] }} $</span></h2>
         </div>
         <div id="chart">
-            <a href="{{ recup['chart'] }}"><h2>Évolution Graphique de l'action</h2></a>
+            <p style="font-weight: bold;font-size: 25px;">CLIQUER SUR LE LIEN CI-DESSOUS POUR VOIR L'ÉVOLUTION DU PRIX DE L'ACTION DE L'INDICE {{ recup['nom'] }}</p> 
+
+            <a href="{{ recup['chart'] }}"><h2 style="color: blue ;">Évolution Graphique de l'action</h2></a>
         </div>
     </div>
 </body>
